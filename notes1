@@ -1,0 +1,115 @@
+
+Fetch API:
+
+The global fetch() method starts the process of fetching resources 
+
+from the network, returning a promise which is fullfilled once the 
+
+response is available.
+
+
+fetch API- is one of the web API (its inbuild with javascript) 
+
+
+example web API
+
+
+DOM
+
+HTML DOM
+
+
+The fecth API Provides an interface for fetching resources
+
+(including across the network).
+
+
+it also provides a global fectch()
+
+
+
+fetch("url",{method:'get' or 'post' or 'update' or 'delete'})
+
+.then(response=>response.json())
+
+.then(response=>console.log(response))
+
+.catch(err=>console.log(err))
+
+
+
+
+
+function myrequest(){
+
+
+fetch( 'url',{ method:'get'});
+
+
+.then(response=>response.json());
+
+
+.then(response=>console.log(response));
+
+
+.catch(err=>console.log(err));
+
+}
+
+
+fecthing single data from the array.
+
+
+function username(){
+
+
+fetch('url',{method:'get'})
+
+.then(response=>response.json());
+
+.then(response=>response.map(user=user.username));
+
+.then(username=>console.log(username));
+
+.catch(err=>console.log(err));
+
+}
+
+
+
+
+
+<html>
+
+<head>
+
+<title>document</head>
+
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<h1>welcome to my webpage</h1>
+
+<button onclick=myrequest()>request to server</button>
+
+</body>
+
+</html>
+
+
+
+
+
+XMLHttpRequest():
+
+
+                xmlhttp request to issue http request in order to exchange
+
+data between the website and server.
+
+
+
+
